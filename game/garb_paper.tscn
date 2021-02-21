@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://garb_paper.png" type="Texture" id=1]
+[ext_resource path="res://garbage.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="garb_paper" type="Sprite" parent="."]
+position = Vector2( -1.63654, 0.346222 )
+texture = ExtResource( 1 )
