@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Cool.wav-0cc758da0ef14f1efb664920b9fa0902.sample"
+
+[deps]
+
+source_file="res://Cool.wav"
+dest_files=[ "res://.import/Cool.wav-0cc758da0ef14f1efb664920b9fa0902.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

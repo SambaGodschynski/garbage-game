@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/schlecht-6.wav-946d2b081615a67f85b43b56b6c0fab2.sample"
+
+[deps]
+
+source_file="res://schlecht-6.wav"
+dest_files=[ "res://.import/schlecht-6.wav-946d2b081615a67f85b43b56b6c0fab2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
