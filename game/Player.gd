@@ -7,7 +7,8 @@ var right_border = 954
 var clunky = right_border / 2 
 onready var green = $green
 onready var grey = $grey
-onready var blue = $blue 
+onready var blue = $blue
+var active = true
 var colors = {}
 var color = ""
 
@@ -22,6 +23,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if active == false:
+		return
 	if Input.is_action_pressed("move_right") and self.position.x <= right_border:
 		self.position.x =  self.position.x + speed
 	if Input.is_action_pressed("move_left") and self.position.x >= left_border: 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://trash_can.png" type="Texture" id=1]
 [ext_resource path="res://Main.gd" type="Script" id=2]
@@ -17,6 +17,8 @@
 [ext_resource path="res://trash_can_bio.png" type="Texture" id=15]
 [ext_resource path="res://trash_can_glas.png" type="Texture" id=16]
 [ext_resource path="res://Cool.wav" type="AudioStream" id=17]
+[ext_resource path="res://Verloren.png" type="Texture" id=18]
+[ext_resource path="res://gordon.png" type="Texture" id=19]
 
 [node name="game" type="Node2D"]
 position = Vector2( 1, 0 )
@@ -68,15 +70,40 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="lifes" type="Label" parent="misc"]
+margin_left = 944.0
+margin_top = 6.0
+margin_right = 978.0
+margin_bottom = 23.0
+rect_scale = Vector2( 2, 2 )
+text = "LIFES"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="music" type="AudioStreamPlayer" parent="misc"]
 stream = ExtResource( 17 )
 autoplay = true
+
+[node name="Verloren" type="Sprite" parent="misc"]
+visible = false
+position = Vector2( 499.279, 218.501 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 18 )
 
 [node name="Player" type="Node2D" parent="."]
 position = Vector2( 0, 500 )
 scale = Vector2( 0.05, 0.05 )
 z_index = 2
 script = ExtResource( 3 )
+
+[node name="gordon" type="Sprite" parent="Player"]
+visible = false
+position = Vector2( -185, -2543.22 )
+rotation = -0.254818
+scale = Vector2( 13.9746, 16.4423 )
+texture = ExtResource( 19 )
 
 [node name="grey" type="Sprite" parent="Player"]
 position = Vector2( 1.414, 0 )
